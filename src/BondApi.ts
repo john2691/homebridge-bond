@@ -329,7 +329,7 @@ export class BondApi {
         'Bond-UUID': bondUuid,
       },
       data: body,
-      timeout: 10000,
+      timeout: 60000,
     })
       .then(response => {
         this.platform.log.debug(`Response (${bondUuid}) [${method} ${uri}] - ${JSON.stringify(response.data)}`);
